@@ -19,7 +19,7 @@ class Block(models.Model):
         return "%s - %s" % (self.id, self.name)
 
 class Slide(models.Model):
-    image = models.CharField(max_length=500)
+    image = models.CharField(max_length=500, null=True, blank=True)
     title = models.CharField(max_length=150, null=True, blank=True)
     button_title = models.CharField(max_length=150, null=True, blank=True)
     button_url = models.CharField(max_length=500, null=True, blank=True)
@@ -53,8 +53,8 @@ class Paragraph(models.Model):
         return "%s" % (self.content)
 
 class Image(models.Model):
-    src = models.CharField(max_length=500)
     alt = models.CharField(max_length=150)
+    src = models.CharField(max_length=500)
     block = models.ForeignKey(Block, related_name='images')
 
     class Meta:
@@ -64,8 +64,8 @@ class Image(models.Model):
         return "%s" % (self.src)
 
 class Button(models.Model):
-    href = models.CharField(max_length=500)
     title = models.CharField(max_length=150)
+    href = models.CharField(max_length=500)
     block = models.ForeignKey(Block, related_name='buttons')
 
     class Meta:
