@@ -1,7 +1,7 @@
 Pavlova API
 ====
 
-[![Build Status](https://travis-ci.org/garciadiazjaime/api-notablemint.svg)](https://travis-ci.org/garciadiazjaime/api-notablemint)
+[![Build Status](https://travis-ci.org/garciadiazjaime/api-pavlova.svg)](https://travis-ci.org/garciadiazjaime/api-pavlova)
 
 API Pavlova website
 
