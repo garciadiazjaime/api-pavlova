@@ -23,9 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'j$icivha(9yfg0oxr*^&2k2gr9v7mo5w(#*cf-z&0e5j0$v26('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    '127.0.0.0',
+    '45.55.12.200',
+    'api.pavlovahipodromo.com'
+]
 
 
 # Application definition
